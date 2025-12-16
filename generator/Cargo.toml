@@ -9,9 +9,9 @@ publish = false
 
 [dependencies]
 
+# Use ufoot/gdext fork with 32-bit support (TargetPointerWidth, write_gdextension_headers_for_target)
 [build-dependencies.godot-bindings]
-git = "https://github.com/godot-rust/gdext"
-#branch = "master"
-rev = "e1f1ce3a23db3b445be4adc504d63611a663b9a9"
+git = "https://github.com/ufoot/gdext"
+branch = "32bit-fix"
 default-features = false
 features = ["api-custom", "api-custom-extheader"]
